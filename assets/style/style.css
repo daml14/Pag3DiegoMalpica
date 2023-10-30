@@ -1,0 +1,186 @@
+:root{
+    --primero:#156D83;
+    --segundo:#4BB8B3;
+    --tercero:#F6DCAC;
+    --cuarto: #EEAF23;
+    --quinto: #E4722B;
+    --sexto:  #DF3B31;
+    --blanco: #FFF;
+    --negro: #000;
+    --fuentePrincipal:'Krub', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    }
+
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+    
+    /** Globales **/
+    body {
+    background-color: var(--tercero)!important;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    }
+    p {
+    font-size: 1.8rem;
+    font-family: 'Krub', sans-serif;
+    color: var(--negro);
+    }
+    a {
+    text-decoration: none;
+    }
+   
+    .contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    }
+    h1, h2, h3 {
+    text-align: center;
+    color: var(--cuarto);
+    font-family: var(--fuentePrincipal);
+    }
+    h1 {font-size: 4rem;}
+    h2 {font-size: 3.2rem;}
+    h3 {font-size: 2.4rem;}
+
+.header__img{
+    background-color: var(--negro);
+    display: flex;
+    justify-content: center;
+    padding-right: 10%;
+}
+.body{
+    background-color: var(--tercero);
+}
+
+.navbg{
+    background-color: var(--negro);
+    margin-bottom: 10rem;
+}
+.navp {
+display: flex;
+flex-direction: column;
+justify-content: space-around !important;
+align-items: center;
+}
+
+@media (min-width: 768px){
+    .navp{
+        flex-direction: row; 
+    }
+   
+}  
+
+.navp a{
+    color: var(--tercero);
+     text-decoration: none;
+     font-size: 2rem;
+     font-weight: 700;
+     padding: 1rem;
+}
+.navp a:hover{
+    background-color: var(--primero);
+    color: var(--negro);
+    border-radius: 10%;
+
+}
+@media (min-width: 768px){
+    .tres-col{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     column-gap: 2.5rem;
+     background-color: var(--negro);
+     padding: 10rem;
+     border-radius: 5%;
+     margin-bottom: 1rem;
+    }
+    .entrada-blog2001{
+    background-color: var(--cuarto);
+    padding: 1rem;
+    border-radius:5%;
+    }
+    .entrada-blog2002{
+        background-color: var(--quinto);
+        padding: 1rem;
+        border-radius:5%;
+        }
+    .entrada-blog2003{
+            background-color: var(--sexto);
+            padding: 1rem;
+            border-radius:5%;
+            }
+
+    .dos-col{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    column-gap: 2.5rem;
+                    background-color: var(--negro);
+                    padding: 10rem;
+                    border-radius: 5%;
+                    margin-bottom: 5rem;
+                }
+    .entrada-blog90{
+                    background-color: var(--primero);
+                    padding: 1rem;
+                    border-radius:5%;
+                }
+    .entrada-blog901{
+                    background-color: var(--segundo);
+                    padding: 1rem;
+                    border-radius:5%;
+    }
+    .contenedor-flex {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+    .contenedor-grid {
+                        display: grid;
+                        grid-template-areas: "izquierda contenido derecha";
+                        grid-template-columns: 1fr 3fr 1fr;
+                        grid-auto-flow: column;
+                        column-gap: 3rem;
+                        background-color: var(--negro);
+                        padding: 10rem;
+                        border-radius: 5%;
+                        margin: 5rem;
+
+                    }
+    .contenido-principal {
+                        grid-area: contenido;
+                        background-color: var(--cuarto);
+                        border-radius: 1%;
+                        margin: 5rem;
+                    }
+                
+    .sidebar-1 {
+                        grid-area: izquierda;
+                        background-color: var(--quinto);
+                        margin-left: 5rem;
+                        border-radius: 1%;
+                    }
+    .sidebar-2 {
+                       
+                        background-color: var(--sexto);
+                        margin-right: 5rem;
+                        border-radius: 1%;
+                    }
+
+ } 
+
+ .footer {
+    background-color: var(--negro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    }
+    .footer__texto {
+    font-family: var(--fuentePrincipal);
+    color: var(--tercero);
+    text-align: center;
+    font-size: 2.2rem;
+    }
+    
